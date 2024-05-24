@@ -1,0 +1,15 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress-service
+  namespace: image-gen
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/wreiner/tmp-ingress-app'
+    path: ingress-service
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: image-gen
