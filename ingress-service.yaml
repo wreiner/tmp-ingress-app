@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ingress-service
-  namespace: image-gen
+  namespace: openshift-gitops
 spec:
   project: default
   source:
