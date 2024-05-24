@@ -7,7 +7,7 @@ metadata:
   labels:
     app: ingress-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ingress-service
